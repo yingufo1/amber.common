@@ -12,7 +12,21 @@ public class StringUtil {
 	public static boolean isBlankString(String in){
 		return StringUtils.isBlank(in);
 	}
-	
+
+	public static String join(String[] strs,String separator){
+		return String.join(separator,strs);
+	}
+
+	public static String repeat(String symbol,String separator,int count){
+		StringBuilder result = new StringBuilder(symbol);
+		while(count>1){
+			result.append(separator);
+			count--;
+		}
+		result.append(symbol);
+		return result.toString();
+	}
+
 	/**
 	 * 返回空字符串或做过trim的字符串
 	 * @param in 输入字符串

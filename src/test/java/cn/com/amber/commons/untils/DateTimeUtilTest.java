@@ -1,0 +1,1 @@
+package cn.com.amber.commons.untils;import org.junit.Test;import java.util.Date;/** * DateTimeUtilTest * * @author yangying * @version 1.0 * @since 2022/10/5 **/public class DateTimeUtilTest {    @Test    public void test(){        System.out.println(DateTimeUtil.formatDate(new Date(),"s:S::")+RandomUtil.getRandomNum(6,1000000));    }}
